@@ -66,14 +66,14 @@ public class Ogretmen {
 
     private static void kimlikNoIleKayitSilme() {
         System.out.println("Silmek istediginiz ogretmenin kimlik nosunu siliniz");
-      String silinecekOgretmen=  scan.nextLine();
-      String silinecekValue=ogretmenlerMap.get(silinecekOgretmen);
-     String sonucValue= ogretmenlerMap.remove(silinecekOgretmen);
-     try{
-         boolean sonuc=sonucValue.equals(silinecekValue);
-     }catch (Exception e){
-         System.out.println("Istediginiz tc numarasi ile ogretmen bulunamadi");
-     }
+        String silinecekOgretmen = scan.nextLine();
+        String silinecekValue = ogretmenlerMap.get(silinecekOgretmen);
+        String sonucValue = ogretmenlerMap.remove(silinecekOgretmen);
+        try {
+            boolean sonuc = sonucValue.equals(silinecekValue);
+        } catch (Exception e) {
+            System.out.println("Istediginiz tc numarasi ile ogretmen bulunamadi");
+        }
     }
 
     private static void ogretmenEkleme() {

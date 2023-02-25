@@ -37,16 +37,20 @@ public class Depo {
                     System.out.println("Gecerli tercih giriniz");
             }
         } while (!select.equalsIgnoreCase("Q"));
-                Depo.projeDurdur();
+        Depo.projeDurdur();
 
-    }public static void projeDurdur(){
+    }
+
+    public static void projeDurdur() {
         System.out.println("Okul projesinden ciktiniz.");
         System.exit(0);// sistemi tamamen durdurur
 
-    }public static void okulBilgileriniYazdir() throws InterruptedException {
+    }
+
+    public static void okulBilgileriniYazdir() throws InterruptedException {
         System.out.println("========= ARZU KOLEJI =========\n" +
-                "\t\t Adres : "+Okul.adres+"\n" +
-                "\t\t Telefon : "+Okul.telefon);
+                "\t\t Adres : " + Okul.adres + "\n" +
+                "\t\t Telefon : " + Okul.telefon);
         Thread.sleep(3000);
     }
 }
