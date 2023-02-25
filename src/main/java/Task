@@ -1,0 +1,45 @@
+========= ARZU KOLEJI =======
+==========ANA MENU ==========
+       1-Okul \bilgilerini Goruntule
+       2-Ogretmen Menu
+       3-Ogrenci Menu
+       Q- Cikis
+
+ Okul bilgileri okul class'inda tutulacak ve constant(degistirilemez) olmalidir.
+ Okul bilgilerine proje icerisinden her class'dan ulasilabilmelidir.
+ Okul Class'i SINGLETON PATTERN'e sahip olmalidir(Obje olusturulmasin aizin vermemelidir).
+
+ ========= ARZU KOLEJI =======
+ ========OGRETMEN MENU =======
+
+         1-Ogretmen listesi Yazdir.
+         2-Soyisminden Ogretmen Bulma
+         3-Branstan Ogretmen Bulma
+         4-Bilgilerini Girerek Ogretmen Ekleme
+         5-Kimlik No ile Kayit Silme
+         A- Ana Menu
+         Q- Cikis
+
+      Ogretmenler icin Ad, Soyad, Kimlik No, Dogum yili, Brans
+      bilgileri tutulmalidir
+      Ogretmen bilgileri kimlik no key olarak kullanilip bir Map'de
+      tutulacaktir.
+      Soyisim veya brans bilgisi ile silme olmayacaktir.
+
+    ========= ARZU KOLEJI =======
+    ======== OGRENCI MENU =======
+
+        1-Ogrenci Listesi Yazdir
+        2-Soyisimden Ogrenci Bulma
+        3-Sinif veya Sube Ile Ogrenci Bulma
+        4-Bilgilerini Girerek Ogrenci Ekleme
+        5-Kimlik No Ile Kayit Silme
+        A-Ana Menu
+        Q-Cikis
+
+      Ogrenciler icin Ad, Soyad, kimlik no, dogum yili,
+      okul no, sinif, sube bilgileri olmalidir
+      Ogrenci bilgileri KImlik no key olarak kullanilip bir Map'de
+      tutulacaktir
+      Listelemelerde basta bilgi satiri olacak ve tablolar duzenli olacaktir/
+      Soyisim veya sinif/sube bilgisi ile silme olmayacaktir.

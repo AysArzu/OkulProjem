@@ -30,7 +30,7 @@ public class Ogretmen {
                     "\t A-Ana Menu\n" +
                     "\t Q-Cikis");
             System.out.println("Seciminiz : ");
-            select = scan.nextLine();
+            select = scan.nextLine().toUpperCase();
             switch (select) {
                 case "1":
                     ogretmenListesiYazdir();
@@ -48,10 +48,8 @@ public class Ogretmen {
                     kimlikNoIleKayitSilme();
                     break;
                 case "A":
-                case "a":
                     Depo.start();
                     break;
-                case "q":
                 case "Q":
 
                     break;
@@ -60,7 +58,7 @@ public class Ogretmen {
             }
 
 
-        } while (!select.equalsIgnoreCase("q"));
+        } while (!select.equals("Q"));
         Depo.projeDurdur();
 
 
@@ -110,7 +108,7 @@ public class Ogretmen {
                 System.out.printf("%-12s %-8s %-8s %4s %-10s\n", eachKey, eachValueArr[0], eachValueArr[1], eachValueArr[2], eachValueArr[3]);
             }
         }
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
     public static void soyismindenOgretmenBulma() throws InterruptedException {
@@ -131,14 +129,14 @@ public class Ogretmen {
             }
 
         }
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
 
     public static void ogretmenListesiYazdir() throws InterruptedException {
         System.out.println("========= ARZU KOLEJI =========\n" +
                 "\n======= OGRETMEN LISTESI =======\n" +
-                "TcNO    isim     Soyisim   D.Yili   Brans ");
+                "TcNO    Isim     Soyisim   D.Yili   Brans");
 
         Set<Map.Entry<String, String>> ogretmenEntrySet = ogretmenlerMap.entrySet();
         for (Map.Entry<String, String> each : ogretmenEntrySet) {
@@ -148,7 +146,7 @@ public class Ogretmen {
             System.out.printf("%-12s %-8s %-8s %4s %-10s\n", eachKey, eachValueArr[0], eachValueArr[1], eachValueArr[2], eachValueArr[3]);
 
         }
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
 

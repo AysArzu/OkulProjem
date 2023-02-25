@@ -27,6 +27,7 @@ public class Depo {
                     break;
                 case "3":
                     //ogrenci menu
+                    Ogrenci.ogrenciMenu();
                     break;
                 case "Q":
                 case "q":
@@ -39,13 +40,13 @@ public class Depo {
                 Depo.projeDurdur();
 
     }public static void projeDurdur(){
-
-
         System.out.println("Okul projesinden ciktiniz.");
+        System.exit(0);// sistemi tamamen durdurur
+
     }public static void okulBilgileriniYazdir() throws InterruptedException {
         System.out.println("========= ARZU KOLEJI =========\n" +
                 "\t\t Adres : "+Okul.adres+"\n" +
                 "\t\t Telefon : "+Okul.telefon);
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 }

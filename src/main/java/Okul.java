@@ -4,5 +4,7 @@
     static final String telefon="02167575757";
 
      private Okul() {
+
+
      }
  }
